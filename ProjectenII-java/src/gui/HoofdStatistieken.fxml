@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root fx:id="contentBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="797.0" prefWidth="1354.0" type="HBox" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="587.0" prefWidth="263.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="56.0" prefWidth="159.0">
+               <children>
+                  <Button fx:id="btnSessies" mnemonicParsing="false" onAction="#toonSessielijst" style="-fx-background-color: #0081C5;" text="Sessies" textAlignment="CENTER">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="30.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btnGebruikers" mnemonicParsing="false" onAction="#toonGebruikerslijst" style="-fx-background-color: #0081C5;" text="Gebruikers" textAlignment="CENTER">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="30.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+               <children>
+                  <Label prefHeight="23.0" prefWidth="146.0" text="Complexe stats? Check out " />
+                  <Hyperlink fx:id="linkPowerBI" onAction="#goToPowerBI" prefHeight="23.0" prefWidth="79.0" text="PowerBI" />
+               </children>
+            </HBox>
+            <VBox fx:id="lijstBox" alignment="TOP_CENTER" prefHeight="496.0" prefWidth="263.0">
+               <children>
+                  <Label fx:id="lblCategorie" text="Sessies/Gebruikers" textAlignment="CENTER">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</fx:root>
