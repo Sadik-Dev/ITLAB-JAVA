@@ -1,9 +1,0 @@
-Statistieken voor sessie titel: 
-
-Sessietitel:                  titel
-Verantwoordelijke:            verantwoordelijke
-Start:                        startuur
-Einde:                        einduur
-Inschrijvingen:               50
-Aanwezigheden:                30
-Percentueel:                  60%
