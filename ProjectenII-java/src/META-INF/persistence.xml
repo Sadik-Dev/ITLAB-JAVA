@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+  <persistence-unit name="IT_LAB" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+	<class>domein.ITlabGebruiker</class>
+	<class>domein.GebruikerState</class>
+	<class>domein.ITlabSessie</class>
+	<class>domein.SessieState</class>
+	<class>domein.FeedbackEntry</class>
+	<class>domein.Media</class>
+	<class>domein.ITlabLokaal</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://40.118.71.191:1433;database=IT_LAB;encrypt=false;trustServerCertificate=false;loginTimeout=30;"/>
+      <property name="javax.persistence.jdbc.user" value="simon.dewilde"/>
+      <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+      <property name="javax.persistence.jdbc.password" value="2903263C2b.e"/>
+      <property name="javax.persistence.schema-generation.database.action" value="none"/>
+    </properties>
+  </persistence-unit>
+</persistence>
+<!-- <?xml version="1.0" encoding="UTF-8"?> -->
+<!-- <persistence version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"> -->
+<!--   <persistence-unit name="IT_LAB" transaction-type="RESOURCE_LOCAL"> -->
+<!--     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider> -->
+<!-- 	<class>Sessie</class> -->
+<!--     <properties> -->
+<!--       <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://.;database=IT_LABTEST;integratedSecurity=true;"/> -->
+<!--       <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/> -->
+<!--       <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/> -->
+<!--     </properties> -->
+<!--   </persistence-unit> -->
+<!-- </persistence> -->
